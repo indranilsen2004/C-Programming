@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main(){
-    int arr[5];
-    for(int i=0;i<=4;i++){
-        printf("Enter element number %d\n",i+1);
-        scanf("%d ",&arr[i]);
+    char str[] = "Hello!";
+    char arr[] = {'H','e','l','l','o','!'};  //SIZE = 6
+    
+    int i =0;
+    while(str[i]!='\0'){
+        printf("%c",str[i]);
+        i++;
     }
-
-    printf("%d",arr[1]);
     return 0;
 }

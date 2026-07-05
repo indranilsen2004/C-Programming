@@ -1,7 +1,10 @@
 #include<stdio.h>
 int main(){
-    float a[3] = {1.2,1.6,2.3};
-    printf("%f",a[1]);
-
+    char arr[] = {'A','t','l','a','s','!'};
+    int i = 0;
+    while(arr[i]!='!'){
+        printf("%c",arr[i]);
+        i++;
+    }
     return 0;
 }
