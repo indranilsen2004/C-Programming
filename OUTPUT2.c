@@ -1,9 +1,10 @@
 #include<stdio.h>
-int main(){ //GARBAGE VALUE
-    int i=1;
-    while(i<=10){
-        printf("\n%d ",i);
-        i++;
+int main(){
+    int sub[50],i;
+    for(i=0;i<=48;i++);
+    {
+        sub[i]=i;
+        printf("\n%d",sub[i]);
     }
     return 0;
 }
