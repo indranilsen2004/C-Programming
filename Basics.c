@@ -1,8 +1,6 @@
 #include<stdio.h>
 int main(){
-    for(int i=1;i<=9;i++){
-        printf("Indranil Sen\n");
-    }
-
+    int arr[5] = {2,4,6,8,1};
+    printf("%d",arr[0]);
     return 0;
 }

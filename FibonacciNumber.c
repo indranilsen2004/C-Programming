@@ -1,21 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
+int fibo(int n){
+    if(n==1 || n==2) return 1;
 
-int main() {
-    int n, a = 1, b = 1, c, i;
+    int ans1 = fibo(n-1);
+    int ans2 = fibo(n-2);
+    int ans = ans1 + ans2;
+    return ans;
 
-    printf("Enter n: ");
-    scanf("%d", &n);
+}
 
-    for (i = 1; i <= n; i++) {
-        if (i == 1 || i == 2) {
-            printf("The %d fibonacci number is %d\n", i, 1);
-        } else {
-            c = a + b;
-            printf("The %d fibonacci number is %d\n", i, c);
-            a = b;
-            b = c;
-        }
-    }
+int main(){
+    int n;
+    printf("Enter a Number: ");
+    scanf("%d",&n);
 
+    printf("%d", fibo(n));
+    
     return 0;
 }
