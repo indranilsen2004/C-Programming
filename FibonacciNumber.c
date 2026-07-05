@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n, a = 1, b = 1, c, i;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        if (i == 1 || i == 2) {
+            printf("The %d fibonacci number is %d\n", i, 1);
+        } else {
+            c = a + b;
+            printf("The %d fibonacci number is %d\n", i, c);
+            a = b;
+            b = c;
+        }
+    }
+
+    return 0;
+}
